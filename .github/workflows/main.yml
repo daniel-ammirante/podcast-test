@@ -15,7 +15,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyyaml
       - name: Run Feed Generator
-        working-directory: /workspaces/podcast-test/
         run: python feed.py
       - name: Push Repo
         run: |
